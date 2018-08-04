@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5MX-GK-4Ct">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="K6X-wP-upR">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="nxd-7t-ped" customClass="WebViewController" customModule="RSS_Reader" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FgI-7Z-y3Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGA-KT-iz1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8sK-kU-2l3" firstAttribute="trailing" secondItem="BGA-KT-iz1" secondAttribute="trailing" id="6I3-N2-OgI"/>
+                            <constraint firstItem="BGA-KT-iz1" firstAttribute="leading" secondItem="8sK-kU-2l3" secondAttribute="leading" id="Dyf-fJ-Omb"/>
+                            <constraint firstItem="8sK-kU-2l3" firstAttribute="bottom" secondItem="BGA-KT-iz1" secondAttribute="bottom" id="q2h-YB-PII"/>
+                            <constraint firstItem="BGA-KT-iz1" firstAttribute="top" secondItem="8sK-kU-2l3" secondAttribute="top" id="vgR-Wq-Y3E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8sK-kU-2l3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xX3-pg-jIh"/>
+                    <connections>
+                        <outlet property="webView" destination="BGA-KT-iz1" id="Gw3-L9-aEu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nTf-8b-7EN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.79999999999995" y="147.97601199400302"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cMl-lE-aUq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5MX-GK-4Ct" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kDF-bh-y3h">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nxd-7t-ped" kind="relationship" relationship="rootViewController" id="MLA-Nf-tsO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hta-Ph-s52" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286" y="148"/>
+        </scene>
+    </scenes>
+</document>
