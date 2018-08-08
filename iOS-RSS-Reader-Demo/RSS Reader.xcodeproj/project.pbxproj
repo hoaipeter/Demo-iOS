@@ -23,6 +23,10 @@
 		2F5606E120E5A28400623A07 /* StoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5606E020E5A28400623A07 /* StoryTableViewController.swift */; };
 		2F5606EA20E60ECF00623A07 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5606E920E60ECF00623A07 /* WebView.storyboard */; };
 		2F5606EE20E60EED00623A07 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5606ED20E60EED00623A07 /* WebViewController.swift */; };
+		AE5B6AC821199A930021A143 /* SampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B6AC721199A930021A143 /* SampleTableViewCell.swift */; };
+		AE5B6ACA21199D2C0021A143 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B6AC921199D2C0021A143 /* SampleTableViewController.swift */; };
+		AE5B6ACC2119A9BC0021A143 /* BBCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B6ACB2119A9BC0021A143 /* BBCTableViewController.swift */; };
+		AE5B6ACE2119A9E90021A143 /* BBCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5B6ACD2119A9E90021A143 /* BBCTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,10 @@
 		2F5606E020E5A28400623A07 /* StoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewController.swift; sourceTree = "<group>"; };
 		2F5606E920E60ECF00623A07 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		2F5606ED20E60EED00623A07 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AE5B6AC721199A930021A143 /* SampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewCell.swift; sourceTree = "<group>"; };
+		AE5B6AC921199D2C0021A143 /* SampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		AE5B6ACB2119A9BC0021A143 /* BBCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCTableViewController.swift; sourceTree = "<group>"; };
+		AE5B6ACD2119A9E90021A143 /* BBCTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBCTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				2F3C6C7C20E63A78000CF570 /* FeedsTableView.storyboard */,
+				AE5B6ACD2119A9E90021A143 /* BBCTableViewCell.swift */,
+				AE5B6ACB2119A9BC0021A143 /* BBCTableViewController.swift */,
+				AE5B6AC921199D2C0021A143 /* SampleTableViewController.swift */,
+				AE5B6AC721199A930021A143 /* SampleTableViewCell.swift */,
 				2F3C6C7E20E63A87000CF570 /* FeedsTableViewController.swift */,
 			);
 			path = FeedsView;
@@ -345,12 +357,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F5606E120E5A28400623A07 /* StoryTableViewController.swift in Sources */,
+				AE5B6ACC2119A9BC0021A143 /* BBCTableViewController.swift in Sources */,
 				2F3C6C7F20E63A87000CF570 /* FeedsTableViewController.swift in Sources */,
 				2F5606AF20E59EE500623A07 /* AppDelegate.swift in Sources */,
 				2F5606DD20E59F4300623A07 /* Parser.swift in Sources */,
+				AE5B6ACE2119A9E90021A143 /* BBCTableViewCell.swift in Sources */,
 				2F5606EE20E60EED00623A07 /* WebViewController.swift in Sources */,
 				2F3C6C8220E63B1C000CF570 /* RSSModel.swift in Sources */,
+				AE5B6ACA21199D2C0021A143 /* SampleTableViewController.swift in Sources */,
 				2F3C6C8A20E64921000CF570 /* Repo.swift in Sources */,
+				AE5B6AC821199A930021A143 /* SampleTableViewCell.swift in Sources */,
 				2F5606DF20E5A25200623A07 /* StoryTableViewCell.swift in Sources */,
 				2F3C6C8420E63B35000CF570 /* FeedModel.swift in Sources */,
 			);
